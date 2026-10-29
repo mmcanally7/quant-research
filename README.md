@@ -19,3 +19,6 @@ Daily dividend-adjusted closes from yfinance, 2015–2025.
 |---|---|---|---|
 | SPY | −33.7% | 2020-03-23 | 2020-08-10 |
 | QQQ | −35.1% | 2022-11-03 | 2023-12-13 |
+
+### Drawdowns over time
+![Drawdowns](drawdowns.png)
