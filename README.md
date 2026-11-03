@@ -8,10 +8,10 @@ Python tools and studies in quantitative finance: return, risk and drawdown anal
 Takes a date-indexed series of prices (a pandas Series or one-column DataFrame) and returns the max drawdown, the bottom date, and the recovery date (`None` if the price hasn't regained its prior peak).
 
 ```python
-import yfinance as yf
+from data import load_prices
 from drawdown import drawdown_stats
 
-prices = yf.download("SPY", start="2015-01-01", end="2025-12-31")["Close"]
+prices = load_prices("SPY", "2015-01-01", "2025-12-31")
 max_dd, bottom, recovered = drawdown_stats(prices)
 ```
 
