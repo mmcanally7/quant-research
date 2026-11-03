@@ -35,4 +35,6 @@ from data import load_prices
 prices = load_prices(["SPY", "QQQ"], "2015-01-01", "2025-12-31")
 ```
 
+Downloads are cached as CSV files in `data_cache/` (one per ticker and date range) and reused on later calls. Pass `refresh=True` to download again, for example after Yahoo revises its data or a new dividend changes the adjusted history. The cache folder is not committed to the repository.
+
 **Limitation:** Yahoo Finance has no history for delisted companies, so a backtest on today's stocks only includes the survivors. Results will look better than a strategy could have achieved in real time.
